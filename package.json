@@ -1,0 +1,18 @@
+{
+  "name": "simple_counter_as",
+  "version": "0.0.1",
+  "license": "MIT",
+  "types": "assembly/index.ts",
+  "scripts": {
+    "build": "yarn build:release && yarn build:debug",
+    "build:release": "asb --wat",
+    "build:debug": "asb --target debug --wat",
+    "test": "asp"
+  },
+  "devDependencies": {
+    "@as-pect/cli": "^4.0.0",
+    "asbuild": "^0.0.8",
+    "assemblyscript": "^0.14.9",
+    "near-sdk-as": "^2.0.0"
+  }
+}
