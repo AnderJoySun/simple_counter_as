@@ -12,10 +12,12 @@ The advantage to using AssemblyScript is that you can write code that generates 
 readable and close to the code that you wrote. This makes AssemblyScript a great language to learn about
 WebAssembly!
 
-# Notes
+# Build it
 
-Running `yarn build` will build both a debug and a release version of the binary and a text version.
+Running `yarn` under folder or path of this project will auto download missing packages and init the build environment.
 
-See `build/debug/simple_counter_as.wat` and `build/release/simple_counter_as.wat` for the generated Wasm.
+Then running `yarn build` will build both a debug and a release version of the binary and a text version.
+
+See `build/debug/simple_counter_as.wat` and `build/release/simple_counter_as.wat` for the generated Wasm in text mode.
 
 Running `yarn test` will run a simple unit test.
