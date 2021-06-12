@@ -12,6 +12,6 @@ export function decrement(): void {
 export function getCounter(): void {
   // Write the value of the counter to memory
   loadCounter();
-  // Tell host the location and length of the value
+  // Tell host the length and location of the value
   env.value_return(VAL_LEN, VAL_PTR);
 }
