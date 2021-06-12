@@ -4,6 +4,8 @@
   "license": "MIT",
   "types": "assembly/index.ts",
   "scripts": {
+    "clean": "rm -rf build/*",
+    "rebuild": "yarn clean && yarn build",
     "build": "yarn build:release && yarn build:debug",
     "build:release": "asb --wat",
     "build:debug": "asb --target debug --wat",
